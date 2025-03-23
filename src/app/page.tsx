@@ -292,6 +292,11 @@ export default function GamePortfolio() {
               bring a problem-solving mindset and a passion for continuous learning.
             </p>
           </motion.div>
+          <div className="text-center mt-12">
+            <Button className="bg-purple-600 hover:bg-purple-700 text-white" asChild>
+              <Link href="/learn">Learn More</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
