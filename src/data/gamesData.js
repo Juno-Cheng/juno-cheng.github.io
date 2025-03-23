@@ -1,9 +1,9 @@
 export const games = [
     {
       id: 1,
-      title: "Space Explorer",
-      image: "/placeholder.svg?height=200&width=300",
-      description: "A 3D space exploration game",
+      title: "Malisense",
+      image: "/projects/Malisense/Malisense.png",
+      description: "2D dungeon crawler. Developed for 2023-24 GDA's MS",
       category: "Game Development",
     },
     {
