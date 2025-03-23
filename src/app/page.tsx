@@ -270,7 +270,7 @@ export default function GamePortfolio() {
         </div>
       </section>
 
-      {/* Experience Section */}
+      {/* Work Experience Section */}
       <section ref={experienceRef} className="py-20 relative z-10 bg-gray-800/30 dark:bg-gray-800/30">
         <div className="container mx-auto px-4">
           <motion.h2
