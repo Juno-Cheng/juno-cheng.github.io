@@ -18,6 +18,7 @@ import Navbar from "@/components/navbar"
 import { Button } from "@/components/ui/button"
 import ThemeToggle from "@/components/theme-toggle"
 import SimpleImage from '@/components/simple-image';
+import { games } from '@/data/gamesData.js';
 
 export default function GamePortfolio() {
   const aboutRef = useRef<HTMLDivElement>(null)
@@ -29,33 +30,6 @@ export default function GamePortfolio() {
       ref.current.scrollIntoView({ behavior: 'smooth' });
     }
   }
-
-  const games = [
-    {
-      id: 1,
-      title: "Space Explorer",
-      image: "/placeholder.svg?height=200&width=300",
-      description: "A 3D space exploration game",
-    },
-    {
-      id: 2,
-      title: "Pixel Warrior",
-      image: "/placeholder.svg?height=200&width=300",
-      description: "A retro-style platformer",
-    },
-    {
-      id: 3,
-      title: "Strategy Masters",
-      image: "/placeholder.svg?height=200&width=300",
-      description: "A turn-based strategy game",
-    },
-    {
-      id: 4,
-      title: "VR Adventure",
-      image: "/placeholder.svg?height=200&width=300",
-      description: "An immersive VR experience",
-    },
-  ]
 
   const experiences = [
     {
@@ -119,10 +93,6 @@ export default function GamePortfolio() {
         onProjectsClick={() => scrollToSection(projectsRef)}
       />
 
-      {/* Theme Toggle */}
-      <div className="fixed bottom-6 left-6 z-50">
-        <ThemeToggle />
-      </div>
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center">

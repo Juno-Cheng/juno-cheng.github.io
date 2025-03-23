@@ -54,11 +54,6 @@ export default function ContactPage() {
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 dark:bg-gradient-to-b dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-white dark:text-white relative overflow-hidden">
       <AnimatedBackground />
 
-      {/* Theme Toggle */}
-      <div className="fixed bottom-6 left-6 z-50">
-        <ThemeToggle />
-      </div>
-
       <div className="container mx-auto px-4 py-20 relative z-10">
         <Link href="/" className="inline-flex items-center text-purple-400 hover:text-purple-300 mb-8">
           <ArrowLeft className="mr-2" /> Back to Home

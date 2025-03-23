@@ -10,6 +10,7 @@ interface Game {
   title: string
   image: string
   description: string
+  category: string
 }
 
 interface GameCardProps {
@@ -31,6 +32,9 @@ export default function GameCard({ game }: GameCardProps) {
           className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+        <div className="absolute top-2 right-2">
+          <span className="text-xs bg-purple-500/80 text-white px-2 py-1 rounded-full">{game.category}</span>
+        </div>
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2 text-purple-400 dark:text-purple-400 group-hover:text-purple-300 transition-colors">
