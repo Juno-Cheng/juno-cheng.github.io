@@ -4,12 +4,10 @@ import { useRef } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import {ArrowLeft} from "@/components/icons"
-import { ArrowDown } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { GameCard } from "@/components/game-card"
 
-export default function HeroNEW() {
+export default function Hero() {
   const scrollRef = useRef<HTMLDivElement>(null)
   const router = useRouter()
 
