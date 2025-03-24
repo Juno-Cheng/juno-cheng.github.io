@@ -19,13 +19,7 @@ export default function ExpSection() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 dark:bg-gradient-to-b dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-white dark:text-white relative overflow-hidden">
-      <AnimatedBackground />
-      <Navbar
-        onAboutClick={() => scrollToSection(aboutRef)}
-        onExperienceClick={() => scrollToSection(experienceRef)}
-        onProjectsClick={() => scrollToSection(projectsRef)}
-      />
+    <div>
 
       {/* Skills Section */}
       <section className="py-16 relative z-10">

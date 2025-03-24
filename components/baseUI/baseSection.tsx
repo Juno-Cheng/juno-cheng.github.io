@@ -21,15 +21,7 @@ export default function BaseSection() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 dark:bg-gradient-to-b dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-white dark:text-white relative overflow-hidden">
-      <AnimatedBackground />
-      <Navbar
-        onAboutClick={() => scrollToSection(aboutRef)}
-        onExperienceClick={() => scrollToSection(experienceRef)}
-        onProjectsClick={() => scrollToSection(projectsRef)}
-      />
-
-
+    <div>
       <section className="relative h-screen flex items-center">
         <div className="container mx-auto px-4 z-10">
           <div className="max-w-3xl">
@@ -94,7 +86,7 @@ export default function BaseSection() {
           </div>
         </div>
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown/>
+          <ArrowDown/> 
         </div>
       </section>
       </div>

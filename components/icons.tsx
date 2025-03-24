@@ -21,6 +21,7 @@ export const ArrowLeft = (props: React.SVGProps<SVGSVGElement>) => (
 
 export const ArrowDown = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
+    {...props}
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
@@ -30,9 +31,8 @@ export const ArrowDown = (props: React.SVGProps<SVGSVGElement>) => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    {...props}
   >
-    <path d="M19 12H5M12 5l7 7-7 7" />
+    <path d="M12 5v14M19 12l-7 7-7-7"/>
   </svg>
 )
 
