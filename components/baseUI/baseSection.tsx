@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import {DownloadIcon, GithubIcon, LinkedinIcon, MailIcon, CodeIcon, DBIcon, ServerIcon, GamepadIcon} from "@/components/icons"
+import {DownloadIcon, ArrowDown} from "@/components/icons"
 import { useRef } from "react"
 import { motion } from "framer-motion"
 import { AnimatedBackground } from "@/components/animated-background"
@@ -94,15 +94,7 @@ export default function BaseSection() {
           </div>
         </div>
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <svg
-            className="w-6 h-6 text-purple-400 dark:text-purple-400"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
+          <ArrowDown/>
         </div>
       </section>
       </div>
