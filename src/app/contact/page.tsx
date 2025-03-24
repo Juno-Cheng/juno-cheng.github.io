@@ -11,7 +11,6 @@ import Mail from "@/public/icons/mail.svg";
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import AnimatedBackground from "@/components/animated-background"
-import ThemeToggle from "@/components/theme-toggle"
 import { useToast } from "@/components/ui/use-toast"
 
 export default function ContactPage() {

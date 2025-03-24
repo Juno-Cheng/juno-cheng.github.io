@@ -331,7 +331,7 @@ export default function LearnPage() {
                   </Button>
                 </div>
                 <div className="mt-6 text-center text-gray-400">
-                  <p>Click "Expand" to view my resume</p>
+                  <p>Click &quot;Expand&quot; to view my resume</p>
                 </div>
               </div>
             </motion.div>

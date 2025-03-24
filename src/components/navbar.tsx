@@ -10,10 +10,9 @@ interface NavbarProps {
   onAboutClick?: () => void
   onExperienceClick?: () => void
   onProjectsClick?: () => void
-  onContactClick?: () => void
 }
 
-export default function Navbar({ onAboutClick, onExperienceClick, onProjectsClick, onContactClick }: NavbarProps) {
+export default function Navbar({ onAboutClick, onExperienceClick, onProjectsClick }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = usePathname()

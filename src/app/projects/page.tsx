@@ -11,7 +11,15 @@ import AnimatedBackground from "@/components/animated-background"
 import ThemeToggle from "@/components/theme-toggle"
 import Image from "next/image";
 
-const ProjectCard = ({ project }: { project: any }) => {
+interface Project {
+  id: number;
+  title: string;
+  image: string;
+  description: string;
+  category: string;
+}
+
+const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}

@@ -16,7 +16,6 @@ import GameCard from "@/components/game-card"
 import AnimatedBackground from "@/components/animated-background"
 import Navbar from "@/components/navbar"
 import { Button } from "@/components/ui/button"
-import ThemeToggle from "@/components/theme-toggle"
 import SimpleImage from '@/components/simple-image';
 import { games } from '@/data/gamesData.js';
 
