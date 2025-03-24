@@ -20,6 +20,7 @@ export default function Home() {
       <ExpSection />
       <AboutSection />
       <WorkSection />
+      <ProjectSection />
       <FooterSection />
       {/* Other sections */}
     </div>
