@@ -3,6 +3,7 @@
 import { useRef } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import {ArrowLeft} from "@/components/icons"
 import { ArrowDown } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
@@ -83,7 +84,7 @@ export default function HeroNEW() {
       
       {/* Adjusted arrow position with proper centering */}
       <div ref={scrollRef} className="absolute bottom-1 left-[calc(50%-1.5rem)] transform animate-bounce">
-        <ArrowDown 
+        <ArrowLeft 
           className="h-8 w-8 text-primary"
           strokeWidth={3}
         />
