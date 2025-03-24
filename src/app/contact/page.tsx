@@ -38,7 +38,7 @@ export default function ContactPage() {
 
     toast({
       title: "Message sent!",
-      description: "Thanks for reaching out. I'll get back to you soon.",
+      description: "Thanks for reaching out. I&apos;ll get back to you soon.",
     })
 
     setFormData({
@@ -69,7 +69,7 @@ export default function ContactPage() {
             Get in <span className="text-purple-400">Touch</span>
           </h1>
           <p className="text-xl text-gray-300 mb-12">
-            I'd love to hear from you. Fill out the form below and I'll get back to you as soon as possible.
+            I&apos;d love to hear from you. Fill out the form below and I&apos;ll get back to you as soon as possible.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -186,7 +186,7 @@ export default function ContactPage() {
               </div>
 
               <div className="mt-8">
-                <h3 className="text-xl font-semibold mb-4">Let's Connect</h3>
+                <h3 className="text-xl font-semibold mb-4">Let&apos;s Connect</h3>
                 <div className="flex space-x-4">
                   <a
                     href="https://github.com/Juno-Cheng"

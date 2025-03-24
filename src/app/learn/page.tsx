@@ -249,7 +249,7 @@ export default function LearnPage() {
                         22
                       </div>
                     </div>
-                    <span className="text-sm text-gray-400">Master's Student</span>
+                    <span className="text-sm text-gray-400">Master&apos;s Student</span>
                   </div>
                 </div>
               </div>
@@ -271,13 +271,13 @@ export default function LearnPage() {
                     career path.
                   </p>
                   <p>
-                    Throughout my academic journey, I've been fortunate to explore various domains within computer
+                    Throughout my academic journey, I&apos;ve been fortunate to explore various domains within computer
                     science. From developing interactive games using Unity and Unreal Engine to analyzing complex
                     datasets for marketing insights, each experience has added a new dimension to my skill set. Now, as
-                    a Master's student at UC Irvine, I'm further expanding my knowledge in advanced computing concepts.
+                    a Master&apos;s student at UC Irvine, I&apos;m further expanding my knowledge in advanced computing concepts.
                   </p>
                   <p>
-                    My professional experience spans multiple industries and roles. I've worked as a game developer
+                    My professional experience spans multiple industries and roles. I&apos;ve worked as a game developer
                     creating immersive experiences, a data analyst extracting meaningful insights from complex datasets,
                     and a frontend developer building responsive web applications. This diverse background has given me
                     a unique perspective on how different technologies can complement each other to solve complex
@@ -285,8 +285,8 @@ export default function LearnPage() {
                   </p>
                   <p>
                     I believe in the power of continuous learning and adaptation in the ever-evolving tech landscape.
-                    Whether it's mastering a new programming language, exploring emerging technologies, or understanding
-                    industry trends, I'm committed to growing my expertise and applying it to create innovative
+                    Whether it&apos;s mastering a new programming language, exploring emerging technologies, or understanding
+                    industry trends, I&apos;m committed to growing my expertise and applying it to create innovative
                     solutions.
                   </p>
                 </div>

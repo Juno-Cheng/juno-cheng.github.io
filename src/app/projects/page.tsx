@@ -67,7 +67,7 @@ export default function ProjectsPage() {
       id: 1,
       title: "Malisense",
       image: "/projects/Malisense/Malisense.png",
-      description: "2D top-down dungeon crawler where you collect artifacts to thwart the Malignance. Developed for 2023-24 GDA's mock studio",
+      description: "2D top-down dungeon crawler where you collect artifacts to thwart the Malignance. Developed for 2023-24 GDA&apos;s mock studio",
       category: "Game Development",
     },
     {
