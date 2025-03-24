@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import ArrowUp from "@/public/icons/arrow-up.svg";
+import ArrowUp from "/public/icons/arrow-up.svg";
 
 interface Game {
   id: number

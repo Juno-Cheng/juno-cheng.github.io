@@ -1,23 +1,23 @@
 "use client"
 
 import type React from "react"
-import DownloadIcon from "@/public/icons/download.svg";
-import GithubIcon from "@/public/icons/github.svg";
-import LinkedinIcon from "@/public/icons/linkedin.svg";
-import MailIcon from "@/public/icons/mail.svg";
-import Code from "@/public/icons/code.svg";
-import Gamepad from "@/public/icons/gamepad.svg";
-import Server from "@/public/icons/server.svg";
-import DBIcon from "@/public/icons/database.svg";
+import DownloadIcon from "/public/icons/download.svg";
+import GithubIcon from "/public/icons/github.svg";
+import LinkedinIcon from "/public/icons/linkedin.svg";
+import MailIcon from "/public/icons/mail.svg";
+import Code from "/public/icons/code.svg";
+import Gamepad from "/public/icons/gamepad.svg";
+import Server from "/public/icons/server.svg";
+import DBIcon from "/public/icons/database.svg";
 import { useRef } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
-import GameCard from "@/components/game-card"
-import AnimatedBackground from "@/components/animated-background"
-import Navbar from "@/components/navbar"
-import { Button } from "@/components/ui/button"
+import GameCard from "../components/game-card"
+import AnimatedBackground from "../components/animated-background"
+import Navbar from "../components/navbar"
+import { Button } from "../components/ui/button"
 import Image from 'next/image';
-import { games } from '@/data/gamesData.js';
+import { games } from '../data/gamesData.js';
 
 export default function GamePortfolio() {
   const aboutRef = useRef<HTMLDivElement>(null)

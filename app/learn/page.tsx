@@ -11,9 +11,9 @@ import LinkedinIcon from "/public/icons/linkedin.svg";
 import DownloadIcon from "/public/icons/download.svg";
 import Image from 'next/image';
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import AnimatedBackground from "@/components/animated-background"
-import ThemeToggle from "@/components/theme-toggle"
+import { Button } from "../../components/ui/button"
+import AnimatedBackground from "../../components/animated-background"
+import ThemeToggle from "../../components/theme-toggle"
 
 
 const ExpandIcon = (props: React.SVGProps<SVGSVGElement>) => (

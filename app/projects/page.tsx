@@ -4,11 +4,11 @@ import type React from "react"
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import ArrowLeft from "@/public/icons/arrow-left.svg";
+import ArrowLeft from "/public/icons/arrow-left.svg";
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import AnimatedBackground from "@/components/animated-background"
-import ThemeToggle from "@/components/theme-toggle"
+import { Button } from "../../components/ui/button"
+import AnimatedBackground from "../../components/animated-background"
+import ThemeToggle from "../../components/theme-toggle"
 import Image from "next/image";
 
 interface Project {

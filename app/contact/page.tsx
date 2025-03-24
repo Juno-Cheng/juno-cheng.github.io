@@ -4,14 +4,14 @@ import type React from "react"
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import ArrowLeft from "@/public/icons/arrow-left.svg";
-import Github from "@/public/icons/github.svg";
-import Linkedin from "@/public/icons/linkedin.svg";
-import Mail from "@/public/icons/mail.svg";
+import ArrowLeft from "/public/icons/arrow-left.svg";
+import Github from "/public/icons/github.svg";
+import Linkedin from "/public/icons/linkedin.svg";
+import Mail from "/public/icons/mail.svg";
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import AnimatedBackground from "@/components/animated-background"
-import { useToast } from "@/components/ui/use-toast"
+import { Button } from "../../components/ui/button"
+import AnimatedBackground from "../../components/animated-background"
+import { useToast } from "../../components/ui/use-toast"
 
 export default function ContactPage() {
   const { toast } = useToast()
