@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 import {MailIcon, ArrowLeft, LinkedinIcon, GithubIcon} from "../../components/icons"
 import Link from "next/link"
 import { Button } from "../../components/ui/button"
-import AnimatedBackground from "../../components/animated-background"
+import { AnimatedBackground } from "../../components/animated-background"
 import { useToast } from "../../components/ui/use-toast"
 
 export default function ContactPage() {

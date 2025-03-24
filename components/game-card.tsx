@@ -17,7 +17,7 @@ interface GameCardProps {
   game: Game
 }
 
-export default function GameCard({ game }: GameCardProps) {
+export function GameCard({ game }: GameCardProps) {
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}

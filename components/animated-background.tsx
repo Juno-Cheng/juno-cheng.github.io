@@ -13,7 +13,7 @@ interface Star {
   color: string
 }
 
-export default function AnimatedBackground() {
+export function AnimatedBackground() {
   const [stars, setStars] = useState<Star[]>([])
   const { theme, systemTheme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme

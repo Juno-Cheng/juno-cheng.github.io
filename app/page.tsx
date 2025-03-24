@@ -5,8 +5,8 @@ import {DownloadIcon, GithubIcon, LinkedinIcon, MailIcon, CodeIcon, DBIcon, Serv
 import { useRef } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
-import GameCard from "../components/game-card"
-import AnimatedBackground from "../components/animated-background"
+import { GameCard } from "../components/game-card"
+import { AnimatedBackground } from "../components/animated-background"
 import Navbar from "../components/navbar"
 import { Button } from "../components/ui/button"
 import Image from 'next/image';

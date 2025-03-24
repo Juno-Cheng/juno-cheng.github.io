@@ -7,8 +7,8 @@ import { motion } from "framer-motion"
 import {ArrowLeft} from "../../components/icons"
 import Link from "next/link"
 import { Button } from "../../components/ui/button"
-import AnimatedBackground from "../../components/animated-background"
-import ThemeToggle from "../../components/theme-toggle"
+import {AnimatedBackground} from "../../components/animated-background"
+import { ThemeToggle } from "../../components/theme-toggle"
 import Image from "next/image";
 
 interface Project {
@@ -81,7 +81,7 @@ export default function ProjectsPage() {
     {
       id: 2,
       title: "Data Visualization ",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/projects/Malisense/Malisense.png,
       description:
         "Interactive data analytics platform for visualizing complex datasets with customizable charts and filters.",
       category: "Data Science",
@@ -89,7 +89,7 @@ export default function ProjectsPage() {
     {
       id: 3,
       title: "AI-Powered Recommendation Engine",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/projects/Malisense/Malisense.png,
       description:
         "Machine learning recommendation system that analyzes user behavior to provide personalized content suggestions.",
       category: "AI/ML",
@@ -97,7 +97,7 @@ export default function ProjectsPage() {
     {
       id: 4,
       title: "Responsive Web Application",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/projects/Malisense/Malisense.png,
       description:
         "Full-stack web development project featuring user authentication, database integration, and responsive design.",
       category: "Web Development",
@@ -105,7 +105,7 @@ export default function ProjectsPage() {
     {
       id: 5,
       title: "Predictive Analytics Tool",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/projects/Malisense/Malisense.png,
       description:
         "Forecasting tool using statistical models to predict future trends based on historical data patterns.",
       category: "Data Science",
@@ -113,14 +113,14 @@ export default function ProjectsPage() {
     {
       id: 6,
       title: "Mobile Game Prototype",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/projects/Malisense/Malisense.png,
       description: "Casual mobile game with unique mechanics, touch controls, and engaging progression systems.",
       category: "Game Development",
     },
     {
       id: 7,
       title: "Natural Language Processing API",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/projects/Malisense/Malisense.png,
       description:
         "Text analysis and sentiment detection service that processes and categorizes text data using NLP algorithms.",
       category: "AI/ML",
@@ -128,7 +128,7 @@ export default function ProjectsPage() {
     {
       id: 8,
       title: "E-commerce Platform",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/projects/Malisense/Malisense.png,
       description:
         "Full-featured online shopping experience with product catalog, shopping cart, and secure checkout process.",
       category: "Web Development",
@@ -136,7 +136,7 @@ export default function ProjectsPage() {
     {
       id: 9,
       title: "Virtual Reality Experience",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/projects/Malisense/Malisense.png,
       description: "Immersive VR application with interactive environments and physics-based interactions.",
       category: "Game Development",
     },

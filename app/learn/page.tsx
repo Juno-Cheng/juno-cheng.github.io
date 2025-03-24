@@ -7,8 +7,8 @@ import {ExpandIcon, ExternalLinkIcon, ChevronDown, ChevronUp, ArrowLeft, Linkedi
 import Image from 'next/image';
 import Link from "next/link"
 import { Button } from "../../components/ui/button"
-import AnimatedBackground from "../../components/animated-background"
-import ThemeToggle from "../../components/theme-toggle"
+import {AnimatedBackground} from "../../components/animated-background"
+import { ThemeToggle } from "../../components/theme-toggle"
 
 // Skill category component with collapsible functionality
 const SkillCategory = ({
