@@ -3,14 +3,8 @@
 import type React from "react"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import ArrowLeft  from "/public/icons/arrow-left.svg";
-import GithubIcon from "/public/icons/github.svg";
-import ChevronUp from "/public/icons/chevron-up.svg";
-import ChevronDown from "/public/icons/chevron-down.svg";
-import LinkedinIcon from "/public/icons/linkedin.svg";
-import DownloadIcon from "/public/icons/download.svg";
+
 import Image from 'next/image';
-import Link from "next/link"
 import { Button } from "../../components/ui/button"
 import AnimatedBackground from "../../components/animated-background"
 import ThemeToggle from "../../components/theme-toggle"
@@ -79,11 +73,7 @@ const SkillCategory = ({
           <span className="text-purple-300 mr-2">{icon}</span>
           {title}
         </div>
-        {isOpen ? (
-          <ChevronUp className="text-purple-400" />
-        ) : (
-          <ChevronDown className="text-purple-400" />
-        )}
+    
       </button>
 
       <AnimatePresence>
@@ -178,9 +168,7 @@ export default function LearnPage() {
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <Link href="/" className="inline-flex items-center text-purple-400 hover:text-purple-300 mb-8">
-          <ArrowLeft className="mr-2" /> Back to Home
-        </Link>
+
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Left Column - Profile and Background */}
@@ -215,7 +203,6 @@ export default function LearnPage() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors"
                       >
-                        <LinkedinIcon className="mr-1" /> LinkedIn
                       </a>
                       <span className="text-gray-500">|</span>
                       <a
@@ -224,7 +211,6 @@ export default function LearnPage() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors"
                       >
-                        <GithubIcon className="mr-1" /> GitHub
                       </a>
                     </div>
                     <div className="flex flex-wrap justify-center md:justify-start gap-2">
@@ -323,7 +309,6 @@ export default function LearnPage() {
                       alert("This would download your resume")
                     }}
                   >
-                    <DownloadIcon className="mr-2" /> Download
                   </Button>
                   <Button
                     variant="outline"
