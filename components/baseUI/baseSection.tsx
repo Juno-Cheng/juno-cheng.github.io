@@ -9,7 +9,7 @@ import Navbar from "@/components/navbar"
 import Image from 'next/image';
 import { Button } from "@/components/ui/button"
 
-export default function GamePortfolio() {
+export default function BaseSection() {
   const aboutRef = useRef<HTMLDivElement>(null)
   const experienceRef = useRef<HTMLDivElement>(null)
   const projectsRef = useRef<HTMLDivElement>(null)
