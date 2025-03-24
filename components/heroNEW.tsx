@@ -7,7 +7,11 @@ import {ArrowLeft} from "@/components/icons"
 import { ArrowDown } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
+
+//Test Imports
 import { GameCard } from "@/components/game-card"
+import { games } from '../data/gamesData.js';
+
 
 export default function HeroNEW() {
   const scrollRef = useRef<HTMLDivElement>(null)
