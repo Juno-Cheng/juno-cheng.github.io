@@ -1,5 +1,5 @@
 import HeroNEW from "@/components/heroNEW"
-import GamePortfolio from "@/components/hero"
+import BaseSection from "@/components/baseUI/baseSection"
 
 export default function Home() {
   return (
