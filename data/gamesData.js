@@ -15,9 +15,9 @@ export const games = [
     },
     {
       id: 3,
-      title: "Data Visualization",
-      image: "/projects/Tacit/TacitBackground.png",
-      description: "A 4 Player PVP game. Developed for senior capstone course",
+      title: "Competitor Analysis through Automated Web Data Extraction",
+      image: "/projects/Octoparse/crawler.png",
+      description: "Extracted and analyzed competitor data for market insights.",
       category: "Data Science",
     },
     {
