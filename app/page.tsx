@@ -2,6 +2,9 @@ import HeroNEW from "@/components/heroNEW"
 import BaseSection from "@/components/baseUI/baseSection"
 import ExpSection from "@/components/baseUI/experienceSection"
 import AboutSection from "@/components/baseUI/aboutSection"
+import WorkSection from "@/components/baseUI/workSection"
+import ProjectSection from "@/components/baseUI/projectSection"
+import FooterSection from "@/components/baseUI/footerSection"
 import { AnimatedBackground } from "@/components/animated-background"
 import Navbar from "@/components/navbar"
 
@@ -15,6 +18,9 @@ export default function Home() {
       {/* Sections */}
       <BaseSection />
       <ExpSection />
+      <AboutSection />
+      <WorkSection />
+      <FooterSection />
       {/* Other sections */}
     </div>
   )
