@@ -4,10 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import ArrowLeft from "/public/icons/arrow-left.svg";
-import Github from "/public/icons/github.svg";
-import Linkedin from "/public/icons/linkedin.svg";
-import Mail from "/public/icons/mail.svg";
+import {MailIcon, ArrowLeft, LinkedinIcon, GithubIcon} from "../../components/icons"
 import Link from "next/link"
 import { Button } from "../../components/ui/button"
 import AnimatedBackground from "../../components/animated-background"
@@ -146,7 +143,7 @@ export default function ContactPage() {
               <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <Mail className="text-purple-400 mt-1 mr-2" />
+                  <MailIcon className="text-purple-400 mt-1 mr-2" />
                   <div>
                     <p className="font-medium">Email</p>
                     <a href="mailto:chengjonathan2021@gmail.com" className="text-gray-300 hover:text-purple-400 text-xs">
@@ -155,7 +152,7 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Github className="text-purple-400 mt-1 mr-2" />
+                  <GithubIcon className="text-purple-400 mt-1 mr-2" />
                   <div>
                     <p className="font-medium">GitHub</p>
                     <a
@@ -169,7 +166,7 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Linkedin className="text-purple-400 mt-1 mr-2" />
+                  <LinkedinIcon className="text-purple-400 mt-1 mr-2" />
                   <div>
                     <p className="font-medium">LinkedIn</p>
                     <a
@@ -193,7 +190,7 @@ export default function ContactPage() {
                     rel="noopener noreferrer"
                     className="bg-gray-700 p-3 rounded-full hover:bg-purple-600 transition-colors"
                   >
-                    <Github className="" />
+                    <GithubIcon className="" />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/jodachen2021/"
@@ -201,13 +198,13 @@ export default function ContactPage() {
                     rel="noopener noreferrer"
                     className="bg-gray-700 p-3 rounded-full hover:bg-purple-600 transition-colors"
                   >
-                    <Linkedin className="" />
+                    <LinkedinIcon className="" />
                   </a>
                   <a
                     href="mailto:chengjonathan2021@gmail.com"
                     className="bg-gray-700 p-3 rounded-full hover:bg-purple-600 transition-colors"
                   >
-                    <Mail className="" />
+                    <MailIcon className="" />
                   </a>
                 </div>
               </div>

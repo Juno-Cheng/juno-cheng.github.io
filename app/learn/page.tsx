@@ -3,51 +3,12 @@
 import type React from "react"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-
+import {ExpandIcon, ExternalLinkIcon, ChevronDown, ChevronUp, ArrowLeft, LinkedinIcon, GithubIcon, DownloadIcon} from "../../components/icons"
 import Image from 'next/image';
+import Link from "next/link"
 import { Button } from "../../components/ui/button"
 import AnimatedBackground from "../../components/animated-background"
 import ThemeToggle from "../../components/theme-toggle"
-
-
-const ExpandIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="m21 21-6-6m6 6v-4.8m0 4.8h-4.8" />
-    <path d="M3 16.2V21m0 0h4.8m-4.8 0 6-6" />
-    <path d="M21 7.8V3m0 0h-4.8m4.8 0-6 6" />
-    <path d="M3 7.8V3m0 0h4.8m-4.8 0 6 6" />
-  </svg>
-)
-
-const ExternalLinkIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-    <polyline points="15 3 21 3 21 9" />
-    <line x1="10" x2="21" y1="14" y2="3" />
-  </svg>
-)
 
 // Skill category component with collapsible functionality
 const SkillCategory = ({
@@ -73,7 +34,11 @@ const SkillCategory = ({
           <span className="text-purple-300 mr-2">{icon}</span>
           {title}
         </div>
-    
+        {isOpen ? (
+          <ChevronUp className="text-purple-400" />
+        ) : (
+          <ChevronDown className="text-purple-400" />
+        )}
       </button>
 
       <AnimatePresence>
@@ -168,7 +133,9 @@ export default function LearnPage() {
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
-
+        <Link href="/" className="inline-flex items-center text-purple-400 hover:text-purple-300 mb-8">
+          <ArrowLeft className="mr-2" /> Back to Home
+        </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Left Column - Profile and Background */}
@@ -203,6 +170,7 @@ export default function LearnPage() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors"
                       >
+                        <LinkedinIcon className="mr-1" /> LinkedIn
                       </a>
                       <span className="text-gray-500">|</span>
                       <a
@@ -211,6 +179,7 @@ export default function LearnPage() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors"
                       >
+                        <GithubIcon className="mr-1" /> GitHub
                       </a>
                     </div>
                     <div className="flex flex-wrap justify-center md:justify-start gap-2">
@@ -309,6 +278,7 @@ export default function LearnPage() {
                       alert("This would download your resume")
                     }}
                   >
+                    <DownloadIcon className="mr-2" /> Download
                   </Button>
                   <Button
                     variant="outline"

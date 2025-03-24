@@ -1,14 +1,7 @@
 "use client"
 
 import type React from "react"
-import DownloadIcon from "/public/icons/download.svg";
-import GithubIcon from "/public/icons/github.svg";
-import LinkedinIcon from "/public/icons/linkedin.svg";
-import MailIcon from "/public/icons/mail.svg";
-import Code from "/public/icons/code.svg";
-import Gamepad from "/public/icons/gamepad.svg";
-import Server from "/public/icons/server.svg";
-import DBIcon from "/public/icons/database.svg";
+import {DownloadIcon, GithubIcon, LinkedinIcon, MailIcon, CodeIcon, DBIcon, ServerIcon, GamepadIcon} from "../components/icons"
 import { useRef } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
@@ -182,7 +175,7 @@ export default function GamePortfolio() {
               className="bg-gray-800/60 p-6 rounded-lg text-center"
             >
               <div className="bg-purple-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Code className="text-purple-400" />
+                <CodeIcon className="text-purple-400" />
               </div>
               <h3 className="text-xl font-bold mb-2">Software Engineering</h3>
               <p className="text-gray-300 text-sm">Full-stack development, web applications, and system architecture</p>
@@ -210,7 +203,7 @@ export default function GamePortfolio() {
               className="bg-gray-800/60 p-6 rounded-lg text-center"
             >
               <div className="bg-purple-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Gamepad className="text-purple-400" />
+                <GamepadIcon className="text-purple-400" />
               </div>
               <h3 className="text-xl font-bold mb-2">Game Development</h3>
               <p className="text-gray-300 text-sm">Interactive experiences, game mechanics, and player engagement</p>
@@ -224,7 +217,7 @@ export default function GamePortfolio() {
               className="bg-gray-800/60 p-6 rounded-lg text-center"
             >
               <div className="bg-purple-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Server className=" text-purple-400" />
+                <ServerIcon className=" text-purple-400" />
               </div>
               <h3 className="text-xl font-bold mb-2">AI & Machine Learning</h3>
               <p className="text-gray-300 text-sm">Intelligent systems, predictive models, and automation</p>
@@ -386,13 +379,13 @@ export default function GamePortfolio() {
         <div className="container mx-auto px-4 text-center text-gray-400 dark:text-gray-400">
           <div className="flex justify-center space-x-6 mb-4">
             <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-              <GithubIcon size={20} />
+              <GithubIcon />
             </a>
             <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-              <LinkedinIcon size={20} />
+              <LinkedinIcon />
             </a>
             <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-              <MailIcon size={20} />
+              <MailIcon />
             </a>
           </div>
           <p>© {new Date().getFullYear()} Jonathan Cheng. All rights reserved.</p>
