@@ -3,7 +3,7 @@
 import type React from "react"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import ArrowLeft from "@/public/icons/arrow-left.svg";
+import ArrowLeft  from "@/public/icons/arrow-left.svg";
 import GithubIcon from "@/public/icons/github.svg";
 import ChevronUp from "@/public/icons/chevron-up.svg";
 import ChevronDown from "@/public/icons/chevron-down.svg";
