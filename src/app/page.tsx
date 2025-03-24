@@ -16,7 +16,7 @@ import GameCard from "@/components/game-card"
 import AnimatedBackground from "@/components/animated-background"
 import Navbar from "@/components/navbar"
 import { Button } from "@/components/ui/button"
-import SimpleImage from '@/components/simple-image';
+import Image from 'next/image';
 import { games } from '@/data/gamesData.js';
 
 export default function GamePortfolio() {
@@ -112,7 +112,14 @@ export default function GamePortfolio() {
               className="flex items-center gap-4 mb-4"
             >
               <div className="relative w-20 h-20 overflow-hidden rounded-full border-2 border-purple-400">
-              <SimpleImage />
+              <div>
+                    <Image
+                      src="/profile/1661913755248.jpg" 
+                      alt="Profile"
+                      width={200}
+                      height={200}
+                      />
+                  </div>
               </div>
               <h1 className="text-5xl font-bold">
                 Hi! I&apos;m <span className="text-purple-400 dark:text-purple-400">Jonathan Cheng</span>, a <br />

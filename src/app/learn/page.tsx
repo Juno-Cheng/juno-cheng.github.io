@@ -9,13 +9,11 @@ import ChevronUp from "@/public/icons/chevron-up.svg";
 import ChevronDown from "@/public/icons/chevron-down.svg";
 import LinkedinIcon from "@/public/icons/linkedin.svg";
 import DownloadIcon from "@/public/icons/download.svg";
-
-
+import Image from 'next/image';
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import AnimatedBackground from "@/components/animated-background"
 import ThemeToggle from "@/components/theme-toggle"
-import SimpleImage from '@/components/simple-image';
 
 
 const ExpandIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -181,7 +179,7 @@ export default function LearnPage() {
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <Link href="/" className="inline-flex items-center text-purple-400 hover:text-purple-300 mb-8">
-          <ArrowLeft className="mr-2 h-4 w-4" /> Back to Home
+          <ArrowLeft className="mr-2" /> Back to Home
         </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -196,7 +194,14 @@ export default function LearnPage() {
               <div className="p-6 border-b border-gray-700">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                   <div className="relative w-32 h-32 overflow-hidden rounded-lg border-2 border-purple-500">
-                    <SimpleImage />
+                    <div>
+                          <Image
+                            src="/profile/1661913755248.jpg" 
+                            alt="Profile"
+                            width={200}
+                            height={200}
+                            />
+                        </div>
                   </div>
                   <div className="flex-1 text-center md:text-left">
                     <h1 className="text-3xl font-bold mb-1">Jonathan Cheng</h1>
