@@ -22,7 +22,7 @@ export const games = [
     },
     {
       id: 4,
-      title: "Responsive Web Application",
+      title: "TBD",
       image: "/projects/Malisense/Malisense.png",
       description: "Full-stack web development project",
       category: "Web Development",
