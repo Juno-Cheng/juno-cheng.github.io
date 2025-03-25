@@ -15,7 +15,7 @@ export const games = [
     },
     {
       id: 3,
-      title: "Competitor Analysis through Automated Web Data Extraction",
+      title: "Competitor Analysis through Data Extraction",
       image: "/projects/Octoparse/crawler.png",
       description: "Extracted and analyzed competitor data for market insights.",
       category: "Data Science",
