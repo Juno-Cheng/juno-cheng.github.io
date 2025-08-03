@@ -111,8 +111,8 @@ export default function ProjectsPage() {
     },
     {
       id: 5,
-      year: 2023,
-      title: "Predictive Analytics Tool",
+      year: 2024,
+      title: "VLO: House Of Horrors",
       image: "/projects/Malisense/Malisense.png",
       description:
         "Forecasting tool using statistical models to predict future trends based on historical data patterns.",
@@ -121,7 +121,7 @@ export default function ProjectsPage() {
     {
       id: 6,
       year: 2023,
-      title: "Mobile Game Prototype",
+      title: "VLO: Quaknite",
       image: "/projects/Malisense/Malisense.png",
       description: "Casual mobile game with unique mechanics, touch controls, and engaging progression systems.",
       category: "Game Development",
@@ -129,7 +129,7 @@ export default function ProjectsPage() {
     {
       id: 7,
       year: 2023,
-      title: "Natural Language Processing API",
+      title: "VLO: Lucky Block RvB",
       image: "/projects/Malisense/Malisense.png",
       description:
         "Text analysis and sentiment detection service that processes and categorizes text data using NLP algorithms.",
