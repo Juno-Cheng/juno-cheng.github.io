@@ -52,7 +52,7 @@ export default function GamePortfolio() {
     {
       id: 4,
       company: "Data Annotation",
-      position: "Data Analyst (Full-Time)",
+      position: "Data Engineer & Analytics Engineer (Full-Time)",
       period: "2023-2024",
       description: "Developed AI algorithms & datasets for content detection, enhancing model accuracy and performance.",
       category: "Data Science & AI",
@@ -139,9 +139,11 @@ export default function GamePortfolio() {
                 variant="outline"
                 className="ml-4 border-purple-600 text-purple-400 hover:bg-purple-900/20 h-10 px-4 py-2"
                 onClick={() => {
-                  alert(
-                    "In a real implementation, this would download your resume. Add your resume.pdf file to the public folder.",
-                  )
+                  const resumeDownload = document.createElement("a");
+                  resumeDownload.href  = "/resume/LaTex_Jonathan_Cheng_Updated_Website_Portfolio.pdf";
+                  resumeDownload.download = "LaTex_Jonathan_Cheng_Resume";
+                  resumeDownload.click();
+  
                 }}
               >
                 <DownloadIcon className="mr-3" /> Download Resume
@@ -246,7 +248,7 @@ export default function GamePortfolio() {
           >
             <p className="text-lg mb-6">
               Welcome to my portfolio! I&apos;m a recent Computer Science and Game Design graduate from UC Santa Cruz, now 
-              pursuing my Master&apos;s in Computer Science at UC Irvine. With fresh experience spanning different fields in CS, I bring a 
+              pursuing my Master&apos;s in Computer Science at USC. With fresh experience spanning different fields in CS, I bring a 
                well-rounded perspective on how different technologies can complement each other to solve real-world problems.
             </p>
             <p className="text-lg mb-6">
