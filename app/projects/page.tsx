@@ -12,6 +12,7 @@ import { ThemeToggle } from "@/components/theme-toggle"
 
 interface Project {
   id: number;
+  year: number;
   title: string;
   image: string;
   description: string;
@@ -42,25 +43,31 @@ const ProjectCard = ({ project }: { project: Project }) => {
           {project.title}
         </h3>
         <p className="text-sm text-gray-300 dark:text-gray-300 mb-3 line-clamp-3 flex-1">{project.description}</p>
-        <Link
-          href={`/projects/${project.id}`}
-          className="inline-flex items-center text-xs text-purple-400 dark:text-purple-400 hover:text-purple-300 transition-colors mt-auto"
-        >
-          View Details
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="ml-1 h-3 w-3"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+        
+        <div className="flex items-center justify-between mt-auto">
+          <span className="inline-flex items-center text-xs bg-purple-500/80 text-white px-2 py-1 rounded-full">
+            {project.year}
+          </span>
+          <Link
+            href={`/projects/${project.id}`}
+            className="inline-flex items-center text-xs text-purple-400 dark:text-purple-400 hover:text-purple-300 transition-colors"
           >
-            <line x1="7" y1="17" x2="17" y2="7"></line>
-            <polyline points="7 7 17 7 17 17"></polyline>
-          </svg>
-        </Link>
+            View Details
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="ml-1 h-3 w-3"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </Link>
+        </div>
       </div>
     </motion.div>
   )
@@ -72,6 +79,7 @@ export default function ProjectsPage() {
   const projects = [
     {
       id: 1,
+      year: 2023,
       title: "Malisense",
       image: "/projects/Malisense/Malisense.png",
       description: "2D top-down dungeon crawler where you collect artifacts to thwart the Malignance. Developed for 2023-24 GDA's mock studio",
@@ -79,30 +87,31 @@ export default function ProjectsPage() {
     },
     {
       id: 2,
-      title: "Data Visualization ",
-      image: "/projects/Malisense/Malisense.png",
-      description:
-        "Interactive data analytics platform for visualizing complex datasets with customizable charts and filters.",
-      category: "Data Science",
+      title: "Tacit",
+      year: 2024,
+      image: "/projects/Tacit/TacitBackground.png",
+      description: "A 4 Player PVP game. Developed for a senior capstone course, now evolving into a student game studio startup.",
+      category: "Game Development",
     },
     {
       id: 3,
-      title: "AI-Powered Recommendation Engine",
-      image: "/projects/Malisense/Malisense.png",
-      description:
-        "Machine learning recommendation system that analyzes user behavior to provide personalized content suggestions.",
-      category: "AI/ML",
+      title: "Competitor Analysis through Data Extraction",
+      year: 2024,
+      image: "/projects/Octoparse/crawler.png",
+      description: "Extracted and analyzed competitor data for market insights.",
+      category: "Data Science",
     },
     {
       id: 4,
-      title: "Responsive Web Application",
-      image: "/projects/Malisense/Malisense.png",
-      description:
-        "Full-stack web development project featuring user authentication, database integration, and responsive design.",
+      title: "Personal Portfolio Project",
+      year: 2024,
+      image: "/projects/WebDev/PersonalProject.png",
+      description: "Next.JS Web Development Project for Portfolio",
       category: "Web Development",
     },
     {
       id: 5,
+      year: 2023,
       title: "Predictive Analytics Tool",
       image: "/projects/Malisense/Malisense.png",
       description:
@@ -111,6 +120,7 @@ export default function ProjectsPage() {
     },
     {
       id: 6,
+      year: 2023,
       title: "Mobile Game Prototype",
       image: "/projects/Malisense/Malisense.png",
       description: "Casual mobile game with unique mechanics, touch controls, and engaging progression systems.",
@@ -118,6 +128,7 @@ export default function ProjectsPage() {
     },
     {
       id: 7,
+      year: 2023,
       title: "Natural Language Processing API",
       image: "/projects/Malisense/Malisense.png",
       description:
@@ -126,6 +137,7 @@ export default function ProjectsPage() {
     },
     {
       id: 8,
+      year: 2023,
       title: "E-commerce Platform",
       image: "/projects/Malisense/Malisense.png",
       description:
@@ -134,6 +146,7 @@ export default function ProjectsPage() {
     },
     {
       id: 9,
+      year: 2023,
       title: "Virtual Reality Experience",
       image: "/projects/Malisense/Malisense.png",
       description: "Immersive VR application with interactive environments and physics-based interactions.",
@@ -143,8 +156,10 @@ export default function ProjectsPage() {
 
   const categories = ["All", "Game Development", "Data Science", "AI/ML", "Web Development"]
 
-  const filteredProjects =
-    activeFilter === "All" ? projects : projects.filter((project) => project.category === activeFilter)
+  const filteredProjects = 
+  activeFilter === "All" 
+    ? [...projects].sort((a, b) => b.year - a.year) 
+    : projects.filter(project => project.category === activeFilter);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 dark:bg-gradient-to-b dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-white dark:text-white relative overflow-hidden">
