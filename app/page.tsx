@@ -26,20 +26,20 @@ export default function GamePortfolio() {
   const experiences = [
     {
       id: 1,
-      company: "Analog AI",
-      position: "Marketing Data Scientist & Frontend Developer (Part-Time)",
-      period: "2024 - Present",
-      description:
-        "Dual role combining data analysis for marketing insights and frontend development for web applications.",
-      category: "Data Science & Web Development",
-    },
-    {
-      id: 2,
       company: "VLO Studio",
-      position: "UEFN Game Developer (Full-Time)",
+      position: "UEFN Game Developer (Full-Time) & Community Manager",
       period: "2024 - Present",
       description: "Developed interactive game experiences using Unreal Engine for Fortnite (UEFN).",
       category: "Game Development",
+    },
+    {
+      id: 2,
+      company: "Maple Inc",
+      position: "Marketing Data Scientist & Frontend Developer",
+      period: "2024 - 2025",
+      description:
+        "Dual role combining data analysis for marketing insights and frontend development for web applications.",
+      category: "Data Science & Web Development",
     },
     {
       id: 3,
